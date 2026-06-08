@@ -1,0 +1,26 @@
+name: Build and publish SonicDE RPM repo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+  actions: write
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    uses: n-a-m-e/linux-package-build-publisher/.github/workflows/publish.yml@main
+    with:
+      package-type: rpm
+      app-id: sonicde
+      source-git: https://github.com/n-a-m-e/rpm-app-sonicde.git
+      build-script: ./copr-build.sh all
+      rpm-profile: rhel
+      rpm-container: fedora:latest
+      rebuild-trigger: |
+        git sonic-specs https://pc-rytteren.dk/forge/anders/SonicDE-rpmspecs.git master
+        git sonic-app https://github.com/n-a-m-e/rpm-app-sonicde.git main
