@@ -18,7 +18,7 @@ jobs:
       package-type: rpm
       app-id: sonicde
       source-git: https://github.com/n-a-m-e/rpm-app-sonicde.git
-      build-script: ./copr-build.sh all
+      build-script: build.sh
       rpm-profile: rhel
       rpm-container: fedora:latest
       rebuild-trigger: |
