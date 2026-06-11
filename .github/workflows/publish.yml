@@ -19,8 +19,9 @@ jobs:
       app-id: sonicde
       source-git: https://github.com/n-a-m-e/rpm-app-sonicde.git
       build-script: build.sh
-      rpm-profile: rhel
-      rpm-container: fedora:latest
+      targets: |
+        fedora-44-x86_64
+        fedora-43-x86_64
       rebuild-trigger: |
         git sonic-specs https://pc-rytteren.dk/forge/anders/SonicDE-rpmspecs.git master
         git sonic-app https://github.com/n-a-m-e/rpm-app-sonicde.git main
