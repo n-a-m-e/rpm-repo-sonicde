@@ -22,5 +22,4 @@ jobs:
       targets: |
         fedora-44-x86_64
       rebuild-trigger: |
-        git sonic-specs https://pc-rytteren.dk/forge/anders/SonicDE-rpmspecs.git master
         git sonic-app https://github.com/n-a-m-e/rpm-app-sonicde.git main
