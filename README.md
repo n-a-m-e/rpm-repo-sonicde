@@ -4,16 +4,7 @@
 
 ## RPM repository
 
-Packages: `sonic-desktop-interface sonic-frameworks-keybind sonic-frameworks-windowsystem sonic-interface-libraries sonic-keybind-daemon sonic-login-manager sonic-screen sonic-screen-library sonic-screenlocker sonic-silver-theme sonic-sysguard-library sonic-system-info sonic-win sonic-workspace`
-
-### ''Fedora 43
-
-Repository file: `https://n-a-m-e.github.io/rpm-repo-sonicde/sonicde-fedora-43.repo`
-
-```bash
-sudo dnf config-manager addrepo --from-repofile="https://n-a-m-e.github.io/rpm-repo-sonicde/sonicde-fedora-43.repo"
-sudo dnf install sonic-desktop-interface sonic-frameworks-keybind sonic-frameworks-windowsystem sonic-interface-libraries sonic-keybind-daemon sonic-login-manager sonic-screen sonic-screen-library sonic-screenlocker sonic-silver-theme sonic-sysguard-library sonic-system-info sonic-win sonic-workspace
-```
+Packages: `openmandriva-buildrequires-compat task-sonicde`
 
 ### ''Fedora 44
 
@@ -21,7 +12,7 @@ Repository file: `https://n-a-m-e.github.io/rpm-repo-sonicde/sonicde-fedora-44.r
 
 ```bash
 sudo dnf config-manager addrepo --from-repofile="https://n-a-m-e.github.io/rpm-repo-sonicde/sonicde-fedora-44.repo"
-sudo dnf install sonic-desktop-interface sonic-frameworks-keybind sonic-frameworks-windowsystem sonic-interface-libraries sonic-keybind-daemon sonic-login-manager sonic-screen sonic-screen-library sonic-screenlocker sonic-silver-theme sonic-sysguard-library sonic-system-info sonic-win sonic-workspace
+sudo dnf install openmandriva-buildrequires-compat task-sonicde
 ```
 
 
