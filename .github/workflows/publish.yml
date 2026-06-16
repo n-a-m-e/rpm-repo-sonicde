@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   publish:
-    uses: n-a-m-e/linux-package-build-publisher/.github/workflows/publish.yml@main
+    uses: n-a-m-e/linux-package-builder/.github/workflows/publish.yml@main
     with:
       package-type: rpm
       app-id: sonicde
